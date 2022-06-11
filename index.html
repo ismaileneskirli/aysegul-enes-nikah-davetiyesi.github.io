@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/add-to-calendar-button@1.8/assets/css/atcb.min.css">
     <style>
       .invitation{
         border: 2px solid black;
@@ -63,6 +64,11 @@
       .btn-style{
         background-color: #009578;
       }
+
+      .atcb_button{
+        background-color: #009578;
+        color: white;
+      }
     </style>
     <title>Nikahımıza Davetlisiniz!</title>
   </head>
@@ -79,6 +85,31 @@
           </div>
           <div class="card-body">
             <h5 class="card-title"></h5>
+            <div class="atcb" style="display:none; margin-bottom: 1em;">
+              {
+                "name":"Ayşegül & Enes Nikah",
+                "description":"Ayşegül Enes nikah tarihi",
+                "startDate":"2022-07-16",
+                "endDate":"2022-07-17",
+                "startTime":"16:30",
+                "endTime":"17:30",
+                "location":"Başak Şehir Nikah Dairesi: https://www.google.com/maps/place/Ba%C5%9Fak%C5%9Fehir+Nikah+Dairesi/@41.117556,28.8072609,15z/data=!4m5!3m4!1s0x0:0x45eb51be376fa500!8m2!3d41.1175552!4d28.8072168",
+                "label":"Takvimine Ekle",
+                "options":[
+                  "Apple",
+                  "Google",
+                  "iCal",
+                  "Microsoft365",
+                  "MicrosoftTeams",
+                  "Outlook.com",
+                  "Yahoo"
+                ],
+                "timeZone":"Europe/İstanbul",
+                "timeZoneOffset":"+03:00",
+                "trigger":"click",
+                "iCalFileName":"Reminder-Event"
+              }
+            </div>
             <a href="https://www.google.com/maps/place/Ba%C5%9Fak%C5%9Fehir+Nikah+Dairesi/@41.117556,28.8072609,15z/data=!4m5!3m4!1s0x0:0x45eb51be376fa500!8m2!3d41.1175552!4d28.8072168" class="btn btn-primary btn-style">Yol Tarifi Al</a>
           </div>
           <div class="card-footer evleniyor">
@@ -149,6 +180,7 @@
       // Update the count down every 1 second
       var x = setInterval(timer, 1000);
       </script>
+      <script src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@1.8" defer></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
