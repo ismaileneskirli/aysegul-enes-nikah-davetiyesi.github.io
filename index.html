@@ -74,10 +74,11 @@
   </head>
   <body>    
     <div class="container-lg">
+      <h5 style="text-align: center; color: #009578; text-decoration: underline; font-size: 14px;" onclick="scrollDownThePage()"> Yol Tarifi | Sayaç | Takvim</h5>
       <div class="row invitation">
           <img src="./davetiye.png">
       </div>
-      <div class="row">
+      <div class="row" id="part-2">
         <div class="card text-center" style="width: 100%;">
           <br/>
           <div class="card-header evleniyor">
@@ -140,7 +141,12 @@
     </div>
 
     <script>
-      // Set the date we're counting down to
+
+      const scrollDownThePage = () => {
+        let elmntToView = document.getElementById("part-2");
+        elmntToView.scrollIntoView(); 
+      }
+            // Set the date we're counting down to
       var countDownDate = new Date("July 16, 2022 16:30:00").getTime();
       const incrementGuestCount = ()=> {
         const visitorName = document.getElementById("visitorName").innerHTML
